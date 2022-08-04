@@ -1,0 +1,100 @@
+.header-container {
+  height: 176px;
+  background-color: #32bdba;
+  color: #1f344b;
+}
+
+.nav {
+  margin: auto;
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $mainFont;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 8px 16px;
+}
+
+.image {
+  width: 220px;
+  padding-top: 45px;
+  padding-bottom: 5px;
+  margin-right: 16px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.nav-list__item {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 8px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.link:hover {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.account {
+  border: 1px solid #1f344b;
+  padding: 13px 30px;
+}
+
+.account:active {
+  background-color: #1f344b;
+  color: #fff;
+}
+
+.account:hover {
+  background-color: #1f344b;
+  color: #fff;
+}
+
+.burger-icon {
+  display: none;
+}
+
+@media screen and (max-width: 991px)  {
+  .header-container{
+    height: 144px;
+  }
+
+  .nav {
+    max-width: 690px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .image {
+    width: 150px;
+    padding: 0;
+  }
+
+  ul.nav-list {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    max-width: 510px;
+  }
+}

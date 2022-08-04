@@ -1,0 +1,53 @@
+.burger-container {
+  background-color: #32bdba;
+  min-height: 100vh;
+}
+.burger-wrapper {
+  max-width: 630px;
+  font-family: $mainFont;
+  color: #1f344b;
+  padding: 200px 10px;
+  margin: 0 auto;
+
+  ul li {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  ul li:last-of-type a{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+
+.burger-nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+
+  ul li {
+    margin-top: 20px;
+  }
+}
+
+.icon-close {
+  position: absolute;
+  top: 8%;
+  left: 80%;
+}
+
+@media screen and (max-width: 991px)  {
+
+}
+
+@media screen and (max-width: 768px) {
+  .burger-wrapper {
+    max-width: 445px;
+    font-size: 28px;
+  }
+  .burger-nav {
+    margin-left: 15%;
+  }
+}
